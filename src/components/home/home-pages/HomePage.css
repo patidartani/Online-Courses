@@ -1,0 +1,148 @@
+.homepage {
+  font-family: 'Poppins', sans-serif;
+}
+.banner-slider-wrapper {
+  position: relative;
+  margin-top: -200px; 
+  z-index: 10; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2vmax;
+}
+.banner-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: right center;
+  padding: 100px 0 300px; /* 👈 Only bottom extra padding */
+  position: relative;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+
+.banner-content {
+  width: 85%;
+  margin: 0 auto;
+}
+.welcome-text {
+  color: #00e3e3;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.banner-title {
+  font-size: 56px;
+  font-weight: 700;
+  color: #0b1c39;
+  line-height: 1.2;
+}
+.highlight {
+  color: #00e3e3;
+  text-decoration: underline;
+  text-decoration-color: #00e3e3;
+}
+.banner-desc {
+  font-size: 18px;
+  color: #555;
+  margin: 20px 0 30px;
+  line-height: 1.6;
+}
+.banner-buttons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.course-btn {
+  position: relative;
+  background-color: #0b1c39;
+  color: white;
+  padding: 16px 28px;
+  font-size: 16px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+.course-btn::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent 30%,
+    rgba(0, 255, 255, 0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+  z-index: 0;
+}
+.course-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+.course-btn:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+.play-icon .circle {
+  width: 60px;
+  height: 60px;
+  background: #00e3e3;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}.arrow-img {
+  position: absolute;
+  right: 42%;
+  top: 110px;
+  width: 100px;
+  transform-origin: center;
+  animation: banner_animi_2 1s linear infinite alternate;
+}
+.book-img {
+  position: absolute;
+  left: 50%;
+  bottom: 220px;
+  width: 130px;
+}
+@keyframes banner_animi_2 {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+@media (max-width: 768px) {
+  .banner-section {
+    flex-direction: column;
+    padding: 50px 10px;
+    background-image: none !important;
+    background-color: #fff !important;
+  }
+  .banner-slider-wrapper{
+    margin-top: 0;
+  }
+  .banner-title {
+    font-size: 38px;
+  }
+  .arrow-img {
+    display: none;
+  }
+  .book-img {
+   display: none;
+  }
+}

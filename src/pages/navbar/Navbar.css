@@ -1,0 +1,152 @@
+/* Base Navbar Styles */
+.navbar {
+  background-color: white;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: sticky !important;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.logo img {
+  width: 150px;
+  height: 50px;
+}
+
+.logo span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2a2a2a;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.nav-links li {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+}
+.nav-links li a {
+  position: relative;
+  text-decoration: none;
+  color: #2a2a2a;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #00d8e0;
+  transition: width 0.3s ease;
+}
+.nav-links li a:hover {
+  color: #00d8e0;
+}
+.nav-links li a:hover::after {
+  width: 100%;
+}
+/* ---------------button css--------------- */
+.login-btn {
+  position: relative;
+  background-color: #00d8e0;
+  color: white;
+  border: none;
+  padding: 13px 35px;
+  border-radius: 50px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+.login-btn::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent 30%,
+    rgba(0, 255, 255, 0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+  z-index: 0;
+}
+.login-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+.login-btn:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+/* ---------------button css--------------- */
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #2a2a2a;
+}
+
+@media (max-width: 768px) {
+  .nav-right {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    display: none;
+  }
+  .nav-right.active {
+    display: flex;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .learn-more {
+    display: block;
+  }
+}
