@@ -1,0 +1,153 @@
+.homeabout {
+  padding: 40px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.about-left {
+  position: relative;
+  width: 45%;
+  min-width: 300px;
+}
+
+.main-img {
+  width: 100%;
+  border-radius: 50%;
+  display: block;
+  z-index: 999;
+}
+.small-img {
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+}
+.dots-img {
+  position: absolute;
+  top: 25px;
+  right: -30px;
+  width: 120px;
+  opacity: 0.4;
+}
+.experience-badge {
+  position: absolute;
+  bottom: -10px;
+  left: 120px;
+  background-color: #00e3e3;
+  color: white;
+  font-weight: 600;
+  padding: 16px 28px;
+  border-radius: 50px;
+  font-size: 16px;
+  white-space: nowrap;
+}
+.experience-badge span {
+  font-size: 26px;
+  font-weight: 700;
+  margin-right: 8px;
+}
+.about-right {
+  width: 50%;
+  min-width: 300px;
+}
+.section-subtitle {
+  color: #00e3e3;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0b1c39;
+  margin-bottom: 20px;
+}
+
+.section-desc {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.about-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.about-features h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0b1c39;
+}
+
+.about-features p {
+  margin: 5px 0 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.icon.red {
+  background-color: #f4616c;
+}
+.icon.cyan {
+  background-color: #00e3e3;
+}
+.icon.orange {
+  background-color: #ff9d00;
+}
+.icon.purple {
+  background-color: #8e44ad;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-left,
+  .about-right {
+    width: 100%;
+  }
+
+  .about-features li {
+    justify-content: center;
+    text-align: left;
+  }
+}

@@ -23,9 +23,9 @@ const HomePage = () => {
           </p>
           <div className="banner-buttons">
             <button className="course-btn">OUR COURSES</button>
-            <div className="play-icon">
+            {/* <div className="play-icon">
               <div className="circle">&#9658;</div>
-            </div>
+            </div> */}
           </div>
         </div>
 

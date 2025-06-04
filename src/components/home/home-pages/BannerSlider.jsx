@@ -1,20 +1,15 @@
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
-
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/autoplay"; // ⬅️ Important for latest Swiper versions
-
+import "swiper/css/autoplay"; 
 import "./BannerSlider.css";
-
 import { IoIosColorPalette } from "react-icons/io";
 import { GiPencilBrush } from "react-icons/gi";
 import { FaBook } from "react-icons/fa";
 import { SiSimpleanalytics } from "react-icons/si";
 import { FaPencilRuler } from "react-icons/fa";
 
-// Base data
 const baseSliderData = [
   {
     iconBg: "#ff9900",
