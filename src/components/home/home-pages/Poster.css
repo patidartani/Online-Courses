@@ -1,0 +1,163 @@
+.poster-container {
+  display: flex;
+  justify-content: center;
+  background-color: #111920;
+  color: white;
+  margin-top: 5vmax;
+  margin-bottom: 5vmax;
+}
+
+.poster-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  gap: 40px;
+}
+
+.poster-left {
+  flex: 1.3;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center; 
+  justify-content: flex-end;
+  position: relative; 
+  min-height: 250px;
+}
+
+.poster-boy-image {
+  width: 180px;
+  height: auto;
+  object-fit: cover;
+  position: absolute; 
+  top: -55px; 
+  left: 0; 
+  z-index: 10;
+}
+
+.poster-image {
+  width: 140px;
+  height: auto;
+  object-fit: cover;
+  position: relative; 
+  z-index: 1;
+}
+
+.poster-right {
+  flex: 3.5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.text-container {
+  max-width: 700px;
+}
+
+.poster-heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.poster-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.poster-button {
+  position: relative;
+  background-color: #00d8e0;
+  color: white;
+  border: none;
+  padding: 13px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.poster-button::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent 30%,
+    rgba(0, 255, 255, 0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+  z-index: 0;
+}
+
+.poster-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.272);
+}
+
+.poster-button:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .poster-data {
+    flex-direction: column;
+    width: 90%;
+    gap: 20px;
+    padding: 4vmax 0vmax;
+  }
+
+  .poster-left {
+    flex: none;
+    min-height: auto;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .poster-boy-image {
+    display: none;
+  }
+
+  .poster-image {
+    width: 160px; 
+  }
+
+  .poster-right {
+    flex: none;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .text-container {
+    max-width: 100%;
+  }
+
+  .poster-heading {
+    font-size: 24px;
+  }
+
+  .poster-text {
+    font-size: 14px;
+  }
+
+  .poster-button {
+    padding: 12px 25px;
+  }
+}

@@ -1,0 +1,76 @@
+.activities-wrapper {
+  text-align: center;
+  padding: 60px 0;
+  background: #f2f8f8;
+  font-family: "Poppins", sans-serif;
+}
+
+.activities-subtitle {
+  color: #00e3e3;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.activities-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0b1f3a;
+  margin-bottom: 40px;
+}
+
+.activities-slider {
+  width: 85%;
+  padding: 15px 5px;
+  margin: 0 auto;
+}
+.activities-card {
+  background: #fff;
+  padding: 30px 20px;
+  border: 1px solid;
+  border-radius: 0 80px 0 80px;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.activities-card:hover {
+  background-color: #0c1d37;
+  color: #fff;
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.activities-card h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 25px;
+}
+
+.activities-icon {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px;
+}
+
+/* Scoped Swiper Pagination for this slider only */
+.activities-wrapper .swiper-pagination-bullet {
+  background: #ccc;
+  opacity: 1;
+}
+
+.activities-wrapper .swiper-pagination-bullet-active {
+  background: #00c9a7;
+}
