@@ -1,0 +1,160 @@
+.counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vmax;
+  padding: 12vmax 0vmax 4vmax 0vmax;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/girl1.jpg");
+}
+
+.counter-data {
+  width: 85%;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.counter-left {
+  flex: 1.9;
+  min-width: 300px;
+  max-width: 900px;
+}
+
+.counter-subtitle {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.counter-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.counter-desc {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.counter-stats {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  flex: 1;
+  min-width: 150px;
+  margin-top: 2vmax;
+}
+
+.stat-box h3 {
+  font-size: 3.3rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.stat-box p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.counter-right {
+  flex: 1;
+  text-align: center;
+  margin-top: 2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter-img {
+  max-width: 500px;
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  object-fit: cover;
+}
+
+/* 🔻 Responsive Styles */
+@media (max-width: 1024px) {
+  .counter-title {
+    font-size: 2rem;
+  }
+
+  .counter-desc {
+    font-size: 1rem;
+  }
+
+  .stat-box h3 {
+    font-size: 2.5rem;
+  }
+
+  .stat-box p {
+    font-size: 1rem;
+  }
+
+  .counter-img {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .counter-data {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .counter-left {
+    max-width: 100%;
+  }
+
+  .counter-right {
+    display: none; /* Hide image on tablets and below */
+  }
+
+  .counter-title {
+    font-size: 1.8rem;
+  }
+
+  .counter-desc {
+    font-size: 0.95rem;
+  }
+
+  .stat-box h3 {
+    font-size: 2rem;
+  }
+
+  .stat-box p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .counter-title {
+    font-size: 1.5rem;
+  }
+
+  .stat-box h3 {
+    font-size: 1.6rem;
+  }
+
+  .stat-box p {
+    font-size: 0.9rem;
+  }
+
+  .counter-subtitle {
+    font-size: 0.9rem;
+  }
+}

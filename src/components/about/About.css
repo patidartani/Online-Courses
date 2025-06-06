@@ -1,0 +1,21 @@
+
+.about-services{
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+}
+.service-subtitle{
+ color: #00e3e3;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.service-title{
+ font-size: 35px;
+  font-weight: 700;
+  color: #0b1c39;
+  margin-bottom: 20px;
+  text-align: center;
+}

@@ -4,6 +4,8 @@ import OurCourses from '../courses/OurCourses'
 import OurTeam from '../team/OurTeam'
 import Activities from './home-pages/Activities'
 import Poster from './home-pages/Poster'
+import Counter from "../counter/Counter"
+import ApplyPoster from './home-pages/ApplyPoster'
 
 const Home = () => {
   return (
@@ -12,8 +14,10 @@ const Home = () => {
       <HomeAbout />
       <Poster/>
       <OurCourses/>
+      <Counter />
       <OurTeam />
-      {/* <Activities/> */}
+      <Activities/>
+      <ApplyPoster/>
     </>
   )
 }

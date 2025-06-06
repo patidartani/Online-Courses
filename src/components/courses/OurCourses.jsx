@@ -84,7 +84,9 @@ const OurCourses = () => {
       <div className="courses-grid">
         {coursesData.map((course) => (
           <div key={course.id} className="course-card">
-            <div className="course-image" style={{ backgroundImage: `url(${course.img})` }}>
+            <div className="course-image">
+                    <img src={course.img} alt={course.title} />
+
               <span className={`tag tag-${course.tag.toLowerCase()}`}>{course.tag}</span>
               <span className="price">{course.price}</span>
             </div>

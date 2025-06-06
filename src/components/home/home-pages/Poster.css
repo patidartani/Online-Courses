@@ -6,7 +6,6 @@
   margin-top: 5vmax;
   margin-bottom: 5vmax;
 }
-
 .poster-data {
   display: flex;
   align-items: center;
@@ -25,7 +24,6 @@
   position: relative; 
   min-height: 250px;
 }
-
 .poster-boy-image {
   width: 180px;
   height: auto;

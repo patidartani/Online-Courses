@@ -1,3 +1,4 @@
+/* Default white background */
 .activities-wrapper {
   text-align: center;
   padding: 60px 0;
@@ -5,6 +6,16 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* Background image and text color override when inside .with-bg */
+.with-bg .activities-wrapper {
+  background-image: url("../../../assets/activities.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+/* Subtitle default */
 .activities-subtitle {
   color: #00e3e3;
   font-weight: 600;
@@ -13,12 +24,24 @@
   text-align: center;
 }
 
+/* Title default */
 .activities-title {
   font-size: 36px;
   font-weight: 700;
   color: #0b1f3a;
   margin-bottom: 40px;
 }
+
+/* Subtitle override in .with-bg */
+.with-bg .activities-subtitle {
+  color: #ffffff;
+}
+
+/* Title override in .with-bg */
+.with-bg .activities-title {
+  color: #ffffff;
+}
+
 
 .activities-slider {
   width: 85%;
@@ -46,11 +69,15 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
+.activities-card:hover h4{
+  color: #fff !important;
+}
 
 .activities-card h4 {
   font-size: 20px;
   font-weight: 600;
   margin-top: 25px;
+  color: #000 !important;
 }
 
 .activities-icon {

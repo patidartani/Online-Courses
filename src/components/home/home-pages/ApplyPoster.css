@@ -1,0 +1,103 @@
+.ApplyPoster{
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          padding: 130px 0px;
+          background-color: #f2f8f8;
+}
+.ApplyPoster .apply-now {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4vmax;
+  text-align: center;
+  gap: 0.5vmax;
+  border-radius: 40px;
+  border: 10px solid #fff;
+  position: absolute; 
+  top: 1px;
+  color: #fff;
+  background-image: url("https://img.freepik.com/free-photo/high-angle-laptop-books-arrangement_23-2149765845.jpg?ga=GA1.1.928172800.1748671466&semt=ais_items_boosted&w=740");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.ApplyPoster .apply-now::before {
+  content: "";
+  position: absolute;
+  inset: 0; 
+  background-color: rgba(0, 0, 0, 0.4); 
+  border-radius: 40px; 
+  z-index: 0;
+}
+.ApplyPoster .apply-now > * {
+  position: relative;
+  z-index: 1;
+}
+.ApplyPoster .apply-now h5{
+        font-size: 2.3vmax;
+        font-weight: 600;
+}
+.ApplyPoster .apply-btn {
+  background-color: #ffffff;  /* white background */
+  color: #333333;             /* dark text */
+  font-weight: 600;
+  font-size: 1vmax;
+  padding: 0.5vmax 1.5vmax;
+  border: 2px solid #333333;
+  border-radius: 25px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.ApplyPoster .apply-btn:hover {
+  background-color: #333333;
+  color: #ffffff;     
+}
+/* Small tablets and below */
+@media (max-width: 900px) {
+  .ApplyPoster {
+    padding: 80px 0;
+  }
+  .ApplyPoster .apply-now {
+    width: 95%;
+    padding: 3vmax;
+    border-radius: 30px;
+    border-width: 6px;
+  }
+  .ApplyPoster .apply-now h5 {
+    font-size: 5vw; /* scalable font */
+  }
+  .ApplyPoster .apply-btn {
+    font-size: 3.5vw;
+    padding: 1.5vw 4vw;
+    border-radius: 20px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .ApplyPoster {
+    padding: 60px 0;
+  }
+  .ApplyPoster .apply-now {
+    width: 95%;
+    padding: 4vw 3vw;
+    border-radius: 25px;
+    border-width: 4px;
+    top: 0;
+  }
+  .ApplyPoster .apply-now h5 {
+    font-size: 6vw;
+  }
+  .ApplyPoster .apply-btn {
+    font-size: 4vw;
+    padding: 2vw 5vw;
+  }
+}

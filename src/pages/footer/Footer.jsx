@@ -23,7 +23,6 @@ const Footer = () => {
             <FaLinkedinIn />
             <FaTwitter />
             <FaPinterestP />
-            <FaGooglePlusG />
           </div>
         </div>
 
