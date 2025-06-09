@@ -24,8 +24,13 @@
 .logo-col .logo {
   font-size: 26px;
   font-weight: bold;
-  color: #00e3e3;
+  color: #d7711cbd;
   margin-bottom: 15px;
+}
+
+.logo-col .logo img{
+  width: 85px;
+  height: 80px;
 }
 .footer-col h3 {
   font-size: 20px;
@@ -48,7 +53,7 @@
   transition: color 0.3s;
 }
 .footer-links a:hover {
-  color: #00e3e3;
+  color: #d7711cbd;
 }
 .footer-socials {
   display: flex;
@@ -65,8 +70,8 @@
 }
 
 .footer-socials svg:hover {
-  background: #00e3e3;
-  color: #000;
+  background: #d7711cbd;
+  color: #fff;
 }
 
 .newsletter {
@@ -87,7 +92,7 @@
   font-size: 14px;
 }
 .newsletter button {
-  background: #00e3e3;
+  background: #d7711cbd;
   color: white;
   border: none;
   padding: 10px 20px;

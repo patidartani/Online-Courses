@@ -23,11 +23,11 @@
 
 
 .banner-content {
-  width: 85%;
+  width: 75%;
   margin: 0 auto;
 }
 .welcome-text {
-  color: #00e3e3;
+  color: #4582FF;
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -38,9 +38,9 @@
   line-height: 1.2;
 }
 .highlight {
-  color: #00e3e3;
+  color: #d7711cbd;
   text-decoration: underline;
-  text-decoration-color: #00e3e3;
+  text-decoration-color: #d7711cbd;
 }
 .banner-desc {
   font-size: 18px;
@@ -92,24 +92,6 @@
 .course-btn:hover::before {
   opacity: 1;
   transform: rotate(-45deg) translateY(100%);
-}
-.play-icon .circle {
-  width: 60px;
-  height: 60px;
-  background: #00e3e3;
-  border-radius: 50%;
-  color: white;
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}.arrow-img {
-  position: absolute;
-  right: 42%;
-  top: 110px;
-  width: 100px;
-  transform-origin: center;
-  animation: banner_animi_2 1s linear infinite alternate;
 }
 .book-img {
   position: absolute;

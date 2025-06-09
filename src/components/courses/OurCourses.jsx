@@ -88,19 +88,19 @@ const OurCourses = () => {
                     <img src={course.img} alt={course.title} />
 
               <span className={`tag tag-${course.tag.toLowerCase()}`}>{course.tag}</span>
-              <span className="price">{course.price}</span>
+              {/* <span className="price">{course.price}</span> */}
             </div>
             <div className="course-info">
               <div className="course-meta">
-                <span className="instructor">👤 {course.instructor}</span>
+                {/* <span className="instructor">👤 {course.instructor}</span> */}
                 <span className="lessons">📁 {course.lessons} Lessons</span>
               </div>
               <h3>{course.title}</h3>
               <p>{course.description}</p>
-              <div className="course-footer">
+              {/* <div className="course-footer">
                 <div className="rating">⭐⭐⭐⭐☆ (04)</div>
                 <div className="students">{course.students}</div>
-              </div>
+              </div> */}
             </div>
           </div>
         ))}

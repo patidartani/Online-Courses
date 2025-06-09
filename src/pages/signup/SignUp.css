@@ -1,0 +1,148 @@
+.signup-container {
+width: 100%;
+min-height: 100vh;
+background-color: #f7faff;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.signup-wrapper {
+display: flex;
+background: white;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+border-radius: 15px;
+overflow: hidden;
+max-width: 900px;
+width: 100%;
+}
+.signup-left {
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+padding-left: 2vmax;
+}
+.signup-left img {
+max-width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.signup-right {
+flex: 1;
+padding: 2.5rem;
+}
+.signup-right h2 {
+font-size: 28px;
+margin-bottom: 10px;
+color: #d7711cbd;
+}
+.signup-right p {
+margin-bottom: 20px;
+color: #555;
+}
+.signup-right form input[type="text"],
+.signup-right form input[type="email"],
+.signup-right form input[type="password"] ,
+.signup-right form input[type="number"] 
+{
+width: 100%;
+padding: 10px 20px;
+margin-bottom: 15px;
+border-radius: 30px;
+border: 1px solid #ccc;
+outline: none;
+}
+.checkbox-wrappers {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+margin-top: 10px;
+font-size: 14px;
+justify-content: flex-start;
+}
+.checkbox-wrappers input {
+margin-right: 10px;
+}
+.signup-btn {
+width: 100%;
+padding: 10px 20px;
+background-color: black;
+color: white;
+border-radius: 30px;
+border: none;
+font-weight: bold;
+cursor: pointer;
+transition: background 0.3s ease;
+}
+.signup-btn:hover {
+background-color: #d7711cbd;
+}
+.login-redirect {
+margin-top: 15px;
+font-size: 14px;
+}
+.login-redirect a {
+color: #d7711cbd;
+text-decoration: none;
+font-weight: 600;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+.signup-wrapper {
+          flex-direction: row;
+}
+.signup-left {
+          padding-left: 1vmax;
+}
+.signup-right {
+          padding: 1.5rem;
+}
+.signup-right h2 {
+          font-size: 24px;
+}
+}
+
+@media (max-width: 768px) {
+.signup-wrapper {
+          flex-direction: column;
+          padding: 20px;
+}
+.signup-left,
+.signup-right {
+          flex: unset;
+          width: 100%;
+          padding: 0;
+}
+.signup-left img {
+          width: 100%;
+          height: auto;
+          max-width: 400px;
+}
+.signup-right {
+          padding: 1rem;
+}
+.signup-right h2 {
+          font-size: 22px;
+}
+.signup-btn {
+          padding: 12px 20px;
+}
+}
+
+@media (max-width: 480px) {
+.signup-right h2 {
+          font-size: 20px;
+}
+.signup-right form input[type="text"],
+.signup-right form input[type="email"],
+.signup-right form input[type="password"] {
+          padding: 8px 15px;
+          font-size: 14px;
+}
+.signup-btn {
+          padding: 8px 15px;
+}
+.login-redirect {
+          font-size: 12px;
+}
+}

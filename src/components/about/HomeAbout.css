@@ -54,7 +54,7 @@ width: 85%;
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #00e3e3;
+  background-color: #4582FF;
   color: white;
   font-weight: 600;
   padding: 12px 24px;
@@ -77,7 +77,7 @@ width: 85%;
 }
 
 .section-subtitle {
-  color: #00e3e3;
+  color: #4582FF;
   font-weight: 600;
   font-size: 16px;
   margin-bottom: 15px;

@@ -6,14 +6,17 @@ import {
   FaPinterestP,
   FaGooglePlusG,
 } from "react-icons/fa";
+import logo from "../../assets/JK School.png"
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Logo & Description */}
         <div className="footer-col logo-col">
-          <h2 className="logo">Eduor</h2>
+          <div className="logo">
+  <img src={logo} alt="JK School Logo" />
+             
+          </div>
           <p>
             Nemo enim ipsam voluptate quia voluptas sit aspernatur aut odit aut
             fugit, sed quia magni this dolores eos qui ratione.

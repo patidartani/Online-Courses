@@ -1,17 +1,17 @@
 /* Base Navbar Styles */
 .navbar {
   background-color: white;
-  padding-top: 20px !important;
-  padding-bottom: 20px !important;
+  /* padding-top: 20px !important;
+  padding-bottom: 20px !important; */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   position: sticky !important;
   top: 0;
   z-index: 1000;
 }
 .nav-links li.active a {
-  color: #00d8e0;
+  color: #d7711cbd;
   font-weight: 600;
-  border-bottom: 3px solid #00d8e0;
+  border-bottom: 3px solid #d7711cbd;
 }
 
 .navbar-container {
@@ -28,8 +28,8 @@
   cursor: pointer;
 }
 .logo img {
-  width: 150px;
-  height: 50px;
+  width: 85px;
+  height: 80px;
 }
 
 .logo span {
@@ -69,11 +69,11 @@
   height: 2px;
   bottom: -3px;
   left: 0;
-  background-color: #00d8e0;
+  background-color: #d7711cbd;
   transition: width 0.3s ease;
 }
 .nav-links li a:hover {
-  color: #00d8e0;
+  color: #d7711cbd;
 }
 .nav-links li a:hover::after {
   width: 100%;
@@ -81,7 +81,7 @@
 /* ---------------button css--------------- */
 .login-btn {
   position: relative;
-  background-color: #00d8e0;
+  background-color: #d7711cbd;
   color: white;
   border: none;
   padding: 13px 35px;

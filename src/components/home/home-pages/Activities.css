@@ -17,7 +17,7 @@
 
 /* Subtitle default */
 .activities-subtitle {
-  color: #00e3e3;
+  color: #4582FF;
   font-weight: 600;
   font-size: 16px;
   margin-bottom: 15px;
@@ -99,5 +99,5 @@
 }
 
 .activities-wrapper .swiper-pagination-bullet-active {
-  background: #00c9a7;
+  background: #d7711cbd;
 }
