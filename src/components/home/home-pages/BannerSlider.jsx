@@ -14,36 +14,43 @@ const baseSliderData = [
   {
     iconBg: "#ff9900",
     icon: <GiPencilBrush />,
-    title: "Product Design",
-    desc: "Bring your product ideas to life with our innovative design solutions.",
+    title: "Academic Excellence",
+    desc: "We provide a strong academic foundation with a well-structured curriculum, experienced teachers, and a focus on concept-based learning to help every student succeed.",
   },
   {
     iconBg: "#f75b78",
     icon: <FaBook />,
-    title: "Exclusive Man",
-    desc: "Get exclusive handyman services for your home in London.",
+    title: "Early Childhood & Primary Education",
+    desc: "We offer a nurturing and engaging environment where young learners build strong foundations in literacy, numeracy, and social skills through play-based and interactive learning.",
   },
   {
     iconBg: "#b6b22c",
     icon: <IoIosColorPalette />,
-    title: "UI/UX Design",
-    desc: "Transform your digital user experience with our design expertise.",
+    title: "Digital Learning",
+    desc: "Empowering students with 21st-century skills through smart classrooms, computer labs, and interactive e-learning tools.",
+  },
+   {
+    iconBg: "#ff9900",
+    icon: <GiPencilBrush />,
+    title: "Events & Competitions",
+    desc: "We organize a variety of events and competitions to inspire talent, boost confidence, and encourage healthy participation among students.",
   },
   {
     iconBg: "#11bfae",
     icon: <FaPencilRuler />,
-    title: "Graphic Design",
-    desc: "Create stunning visuals and graphics for your brand or project.",
+    title: "Co-Curricular Activities",
+    desc: "We encourage all-round development through music, art, sports, dance, and various club activities that build creativity and confidence.",
   },
   {
     iconBg: "#f75b78",
     icon: <SiSimpleanalytics />,
-    title: "Digital Marketing",
-    desc: "Grow your online presence with strategic digital marketing solutions.",
+    title: "Personality & Moral Development",
+    desc: "We instill strong values, life skills, and leadership qualities to help students grow into responsible and confident individuals.",
   },
+ 
 ];
 
-// Repeat to get more slides
+
 const sliderData = [...baseSliderData, ...baseSliderData];
 
 const BannerSlider = () => {

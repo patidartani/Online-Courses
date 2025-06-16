@@ -1,8 +1,16 @@
 import "./Poster.css";
 import notebookimg from "../../../assets/notebook.png";
 import posterBoyimg from "../../../assets/posterboy.png";
+import { useNavigate } from "react-router-dom";
 
 const Poster = () => {
+
+  const naviagte = useNavigate()
+   const contactHandler = () => {
+naviagte("/contact")
+   }
+
+
   return (
     <div className="poster-container">
       <div className="poster-data">
@@ -19,7 +27,7 @@ const Poster = () => {
               Please input anand school. included the today.
             </p>
           </div>
-          <button className="poster-button">CONTACT US</button>
+          <button className="poster-button" onClick={contactHandler}>CONTACT US</button>
         </div>
       </div>
     </div>

@@ -4,9 +4,10 @@ import {
   FaLinkedinIn,
   FaTwitter,
   FaPinterestP,
-  FaGooglePlusG,
 } from "react-icons/fa";
 import logo from "../../assets/JK School.png"
+import { Link } from "react-router-dom";
+
 
 const Footer = () => {
   return (
@@ -33,12 +34,12 @@ const Footer = () => {
         <div className="footer-col">
           <h3>Quick Links</h3>
           <div className="footer-links">
-            <a href="#">Best Services</a>
-            <a href="#">Events</a>
-            <a href="#">About Our Company</a>
-            <a href="#">Our Courses</a>
-            <a href="#">Our Team</a>
-          </div>
+  <Link to="/about">About Our Company</Link>
+  <Link to="/courses">Our Courses</Link>
+  <Link to="/events">Our Upcoming Events</Link>
+  <Link to="/our-team">Our Team</Link>
+  <Link to="/contact">Contact Us</Link>
+</div>
         </div>
 
         {/* Contact Info */}
@@ -71,7 +72,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <p>Copyright ©Eduor all rights reserved.</p>
         <div>
-          <a href="#">Privacy Policy</a> | <a href="#">About</a>
+        <Link href="#">Terms & Conditions </Link>   | <Link href="#">Privacy Policy</Link> 
         </div>
       </div>
     </footer>

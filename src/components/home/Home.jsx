@@ -6,6 +6,7 @@ import Activities from './home-pages/Activities'
 import Poster from './home-pages/Poster'
 import Counter from "../counter/Counter"
 import ApplyPoster from './home-pages/ApplyPoster'
+import Portfolio from './home-pages/Portfolio'
 
 const homeTeam = [
     {
@@ -33,9 +34,10 @@ const Home = () => {
       <Poster/>
       <OurCourses/>
       <Counter />
+      <Portfolio/>
+      <Activities/>
       <OurTeam teamMembers={homeTeam} />
 
-      <Activities/>
       <ApplyPoster/>
     </>
   )

@@ -2,7 +2,9 @@
 .activities-wrapper {
   text-align: center;
   padding: 60px 0;
-  background: #f2f8f8;
+  /* background: #060606; */
+  background-image:url("../../../assets/activities.jpg") ;
+  
   font-family: "Poppins", sans-serif;
 }
 
@@ -17,7 +19,8 @@
 
 /* Subtitle default */
 .activities-subtitle {
-  color: #4582FF;
+  /* color: #4582FF; */
+  color: #fff;
   font-weight: 600;
   font-size: 16px;
   margin-bottom: 15px;
@@ -28,7 +31,8 @@
 .activities-title {
   font-size: 36px;
   font-weight: 700;
-  color: #0b1f3a;
+  /* color: #0b1f3a; */
+  color: #fff;
   margin-bottom: 40px;
 }
 
