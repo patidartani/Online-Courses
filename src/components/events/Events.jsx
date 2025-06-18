@@ -24,7 +24,7 @@ const events = [
     img: "https://img.freepik.com/free-photo/top-view-kids-laying-cloth_23-2149668716.jpg?ga=GA1.1.928172800.1748671466&semt=ais_items_boosted&w=740",
     desc: "A fun day outdoors with games, food, and bonding for all students and staff.",
     organizer: "Class Teachers",
-  },
+  }, 
   {
     title: "Live Music Concert",
     type: "MUSIC",
@@ -72,7 +72,6 @@ const events = [
   desc: "Expert talks and sessions to help students plan their future career paths.",
   organizer: "Counseling Department",
 }
-
 ];
 
 
@@ -103,7 +102,7 @@ const Events = () => {
                   </span>
                 </div>
                 <div className="event-details">
-                  <h3>{event.title}</h3>
+                  <h3>{event.title}</h3>   
                   <p>{event.desc}</p>
                   <p>
                     <strong>Organizer:</strong> {event.organizer}

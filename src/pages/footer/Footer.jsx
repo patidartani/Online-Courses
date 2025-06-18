@@ -5,9 +5,8 @@ import {
   FaTwitter,
   FaPinterestP,
 } from "react-icons/fa";
-import logo from "../../assets/JK School.png"
+import logo from "../../assets/JK School.png";
 import { Link } from "react-router-dom";
-
 
 const Footer = () => {
   return (
@@ -15,8 +14,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-col logo-col">
           <div className="logo">
-  <img src={logo} alt="JK School Logo" />
-             
+            <img src={logo} alt="JK School Logo" />
           </div>
           <p>
             Nemo enim ipsam voluptate quia voluptas sit aspernatur aut odit aut
@@ -34,22 +32,22 @@ const Footer = () => {
         <div className="footer-col">
           <h3>Quick Links</h3>
           <div className="footer-links">
-  <Link to="/about">About Our Company</Link>
-  <Link to="/courses">Our Courses</Link>
-  <Link to="/events">Our Upcoming Events</Link>
-  <Link to="/our-team">Our Team</Link>
-  <Link to="/contact">Contact Us</Link>
-</div>
+            <Link to="/about">About Our Company</Link>
+            <Link to="/courses">Our Courses</Link>
+            <Link to="/events">Our Upcoming Events</Link>
+            <Link to="/our-team">Our Team</Link>
+            <Link to="/contact">Contact Us</Link>  
+          </div>
         </div>
 
         {/* Contact Info */}
         <div className="footer-col">
           <h3>Our Contacts</h3>
-           <div className="footer-links">
-                     <a href="">Address: 27 Division St, Berakuti, NY 121102, USA</a>
-          <a href="">Phone: +8 1440 456 782</a>
-          <a href="">Email: example@mail.com</a>
-           </div>
+          <div className="footer-links">
+            <a href="">Address: 27 Division St, Berakuti, NY 121102, USA</a>
+            <a href="">Phone: +8 1440 456 782</a>
+            <a href="">Email: example@mail.com</a>
+          </div>
         </div>
 
         {/* Newsletter */}
@@ -72,7 +70,8 @@ const Footer = () => {
       <div className="footer-bottom">
         <p>Copyright ©Eduor all rights reserved.</p>
         <div>
-        <Link href="#">Terms & Conditions </Link>   | <Link href="#">Privacy Policy</Link> 
+          <Link href="#">Terms & Conditions </Link> |{" "}
+          <Link href="#">Privacy Policy</Link>
         </div>
       </div>
     </footer>
